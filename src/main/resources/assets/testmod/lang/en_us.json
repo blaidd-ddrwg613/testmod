@@ -1,6 +1,13 @@
 {
   "item.testmod.raw_black_opal" : "Raw Black Opal",
-  "item.testmod.black_opal": "Black Opal",
+  "item.testmod.black_opal" : "Black Opal",
+
+  "block.testmod.black_opal_block" : "Black Opal Block",
+  "block.testmod.raw_black_opal_block" : "Raw Black Opal Block",
+  "block.testmod.black_opal_ore" : "Black Opal Ore",
+  "block.testmod.black_opal_deepslate_ore" : "Black Opal Deepslate Ore",
+  "block.testmod.black_opal_nether_ore" : "Black Opal Nether Ore",
+  "block.testmod.black_opal_end_ore" : "Black Opal End Ore",
 
 
   "itemGroup.testmod.black_opal_items_tab" : "Test Mod"

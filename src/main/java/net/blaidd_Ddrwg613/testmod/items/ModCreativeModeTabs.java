@@ -1,6 +1,7 @@
 package net.blaidd_Ddrwg613.testmod.items;
 
 import net.blaidd_Ddrwg613.testmod.TestMod;
+import net.blaidd_Ddrwg613.testmod.blocks.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

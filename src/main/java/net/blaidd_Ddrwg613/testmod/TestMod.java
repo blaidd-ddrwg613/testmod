@@ -1,5 +1,6 @@
 package net.blaidd_Ddrwg613.testmod;
 
+import net.blaidd_Ddrwg613.testmod.blocks.ModBlocks;
 import net.blaidd_Ddrwg613.testmod.items.ModCreativeModeTabs;
 import net.blaidd_Ddrwg613.testmod.items.ModItems;
 import org.slf4j.Logger;
@@ -38,7 +39,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TestMod.MODID)
-public class TestMod {
+public class TestMod
+{
     // Define mod id in a common place for everything to reference
     public static final String MODID = "testmod";
     // Directly reference a slf4j logger
@@ -46,11 +48,13 @@ public class TestMod {
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public TestMod(IEventBus modEventBus, ModContainer modContainer) {
+    public TestMod(IEventBus modEventBus, ModContainer modContainer)
+    {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
         ModItems.Register(modEventBus);
+        ModBlocks.Register(modEventBus);
 
         ModCreativeModeTabs.Register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
@@ -71,7 +75,8 @@ public class TestMod {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
 
-        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
+        if (Config.LOG_DIRT_BLOCK.getAsBoolean())
+        {
             LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
         }
 
@@ -80,26 +85,22 @@ public class TestMod {
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
-    // Add the example block item to the building blocks tab
+    // Add to Vanilla Creative Tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-        {
-            event.accept(ModItems.BLACK_OPAL);
-            event.accept(ModItems.RAW_BLACK_OPAL);
-        }
-    }
+    {}
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
+    public void onServerStarting(ServerStartingEvent event)
+    {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = TestMod.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    static class ClientModEvents {
+    static class ClientModEvents
+    {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
             // Some client setup code
