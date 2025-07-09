@@ -4,6 +4,7 @@ import net.blaidd_Ddrwg613.testmod.TestMod;
 import net.blaidd_Ddrwg613.testmod.blocks.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -22,7 +23,8 @@ public class ModCreativeModeTabs
                     .icon(() -> new ItemStack(ModItems.BLACK_OPAL.get()))
                     .displayItems((pParameters, pOutput) ->
                     {
-                        ModItems.ITEMS.getEntries().forEach(item -> pOutput.accept(item.get()));
+                        ModBlocks.Creative_Tab_Blocks.forEach((block) -> pOutput.accept(block.get().asItem()));
+                        ModItems.CREATIVE_TAB_ITEMS.forEach((item)-> pOutput.accept(item.get()));
                     }).build());
 
     public static void Register(IEventBus eventBus) {
