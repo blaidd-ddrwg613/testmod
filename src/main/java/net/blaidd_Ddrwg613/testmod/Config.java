@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package net.blaidd_Ddrwg613.testmod;
 
 import java.util.List;
 import java.util.Set;
