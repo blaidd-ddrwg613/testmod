@@ -2,7 +2,10 @@ package net.blaidd_Ddrwg613.testmod.items;
 
 import com.google.common.collect.Sets;
 import net.blaidd_Ddrwg613.testmod.TestMod;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -18,6 +21,8 @@ public class ModItems
     public static final Supplier<Item> RAW_BLACK_OPAL = RegisterWithTab("raw_black_opal",() -> new Item(BasicItem()));
     public static final Supplier<Item> CHAINSAW = RegisterWithTab("chainsaw",
             ()-> new ChainsawItem(new Item.Properties().durability(150)));
+    public static final Supplier<Item> TOMATO = RegisterWithTab("tomato", ()->
+            new Item(new Item.Properties().food(ModFoodProperties.TOMATO)));
 
 
     private static Supplier<Item> RegisterWithTab(String name, Supplier<Item> supplier)

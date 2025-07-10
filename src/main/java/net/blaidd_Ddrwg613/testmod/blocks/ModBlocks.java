@@ -32,6 +32,9 @@ public class ModBlocks
             new DropExperienceBlock(UniformInt.of(4,6),BlockBehaviour.Properties.of().strength(4.0f).requiresCorrectToolForDrops()));
     public static final Supplier<Block> BLACK_OPAL_END_ORE = registerBlockWithTab("black_opal_end_ore", ()->
             new DropExperienceBlock(UniformInt.of(5,8),BlockBehaviour.Properties.of().strength(4.0f).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> MAGIC_BLOCK = registerBlockWithTab("magic_block", ()->
+            new MagicBlock(BlockBehaviour.Properties.of().strength(1.0f)));
+
 
     private static <T extends Block> Supplier<Block> registerBlockWithTab(String name, Supplier<T> block)
     {
