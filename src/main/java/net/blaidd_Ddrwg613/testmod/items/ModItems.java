@@ -16,6 +16,8 @@ public class ModItems
 
     public static final Supplier<Item> BLACK_OPAL = RegisterWithTab("black_opal", () -> new Item(BasicItem()));
     public static final Supplier<Item> RAW_BLACK_OPAL = RegisterWithTab("raw_black_opal",() -> new Item(BasicItem()));
+    public static final Supplier<Item> CHAINSAW = RegisterWithTab("chainsaw",
+            ()-> new ChainsawItem(new Item.Properties().durability(150)));
 
 
     private static Supplier<Item> RegisterWithTab(String name, Supplier<Item> supplier)
