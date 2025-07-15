@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "x": {
+      "item": "testmod:black_opal"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "xdx",
+    "xxx"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testmod:magic_block"
+  }
+}

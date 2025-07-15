@@ -1,6 +1,7 @@
 package net.blaidd_Ddrwg613.testmod.blocks;
 
 import net.blaidd_Ddrwg613.testmod.items.ModItems;
+import net.blaidd_Ddrwg613.testmod.utils.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -44,8 +45,6 @@ public class MagicBlock extends Block
 
     private boolean isValidItem(ItemStack itemStack)
     {
-        Item item = itemStack.getItem();
-        return item == Items.COAL || item == Items.DANDELION || item == ModItems.BLACK_OPAL.get();
-
+        return itemStack.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 }
