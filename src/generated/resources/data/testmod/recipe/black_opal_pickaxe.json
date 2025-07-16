@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "c": {
+      "item": "minecraft:stick"
+    },
+    "x": {
+      "item": "testmod:black_opal"
+    }
+  },
+  "pattern": [
+    " x ",
+    " x ",
+    " c "
+  ],
+  "result": {
+    "count": 1,
+    "id": "testmod:black_opal_pickaxe"
+  }
+}

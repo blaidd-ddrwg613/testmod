@@ -1,4 +1,4 @@
-package net.blaidd_Ddrwg613.testmod.items;
+package net.blaidd_Ddrwg613.testmod.items.Custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

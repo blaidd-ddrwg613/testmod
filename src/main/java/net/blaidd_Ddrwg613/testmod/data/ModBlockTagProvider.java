@@ -6,6 +6,8 @@ import net.blaidd_Ddrwg613.testmod.utils.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -34,5 +36,17 @@ public class ModBlockTagProvider extends BlockTagsProvider
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACK_OPAL_ORE.get())
                 .add(ModBlocks.BLACK_OPAL_DEEPSLATE_ORE.get());
+
+        this.tag(ModTags.Blocks.INCORRECT_FOR_BLACK_OPAL_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+
+        this.tag(ModTags.Blocks.NEEDS_BLACK_OPAL_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_BLACK_OPAL_TOOL);
+
+        tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }

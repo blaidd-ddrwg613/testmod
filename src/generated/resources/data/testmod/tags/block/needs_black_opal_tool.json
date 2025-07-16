@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#testmod:needs_black_opal_tool"
+  ],
+  "values": [
+    "#minecraft:needs_iron_tool"
+  ]
+}

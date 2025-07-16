@@ -30,6 +30,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput)
     {
+        // Shaped Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_OPAL_BLOCK.get())
                 .pattern("xxx")
                 .pattern("xxx")
@@ -52,7 +53,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('d', Items.DIAMOND)
                 .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get()))
                 .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_PICKAXE.get())
+                .pattern(" x ")
+                .pattern(" x ")
+                .pattern(" c ")
+                .define('x', ModItems.BLACK_OPAL.get())
+                .define('c', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get()))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_PAXEL.get()).pattern("xxx").pattern(" s ").pattern(" s ").define("")
 
+        // Shapeless Recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
                 .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
                 .unlockedBy("black_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK.get()))
@@ -62,6 +73,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("black_raw_black_opal_block", has(ModBlocks.RAW_BLACK_OPAL_BLOCK.get()))
                 .save(recipeOutput);
 
+        // Smelting Recipes
         oreSmelting(recipeOutput, SMELTING_LIST, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 300, "black_opal");
         oreBlasting(recipeOutput, SMELTING_LIST, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 150, "black_opal");
     }

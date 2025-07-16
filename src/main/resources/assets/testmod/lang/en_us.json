@@ -3,6 +3,12 @@
   "item.testmod.black_opal" : "Black Opal",
   "item.testmod.chainsaw": "Chainsaw",
   "item.testmod.tomato": "Tomato",
+  "item.testmod.black_opal_pickaxe": "Black Opal Pickaxe",
+  "item.testmod.black_opal_axe": "Black Opal Axe",
+  "item.testmod.black_opal_shovel": "Black Opal Shovel",
+  "item.testmod.black_opal_hoe": "Black Opal Hoe",
+  "item.testmod.black_opal_sword": "Black Opal Sword",
+  "item.testmod.black_opal_paxel": "Black Opal Paxel",
 
   "block.testmod.black_opal_block" : "Black Opal Block",
   "block.testmod.raw_black_opal_block" : "Raw Black Opal Block",

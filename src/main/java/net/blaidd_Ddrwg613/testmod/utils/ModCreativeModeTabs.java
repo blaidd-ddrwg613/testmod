@@ -1,7 +1,8 @@
-package net.blaidd_Ddrwg613.testmod.items;
+package net.blaidd_Ddrwg613.testmod.utils;
 
 import net.blaidd_Ddrwg613.testmod.TestMod;
 import net.blaidd_Ddrwg613.testmod.blocks.ModBlocks;
+import net.blaidd_Ddrwg613.testmod.items.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
