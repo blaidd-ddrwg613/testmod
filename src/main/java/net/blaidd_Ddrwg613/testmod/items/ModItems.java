@@ -5,6 +5,7 @@ import net.blaidd_Ddrwg613.testmod.TestMod;
 import net.blaidd_Ddrwg613.testmod.items.Custom.ChainsawItem;
 import net.blaidd_Ddrwg613.testmod.items.Custom.HammerItem;
 import net.blaidd_Ddrwg613.testmod.items.Custom.PaxelItem;
+import net.minecraft.core.component.DataComponentType;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
