@@ -6,6 +6,7 @@ import net.blaidd_Ddrwg613.testmod.utils.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -29,5 +30,8 @@ public class ModItemTagProvider extends ItemTagsProvider
                 .add(Items.CHARCOAL)
                 .add(Items.DANDELION)
                 .add(ModItems.BLACK_OPAL.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR);
+
     }
 }

@@ -22,6 +22,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     List<ItemLike> SMELTING_LIST = List.of(ModItems.RAW_BLACK_OPAL.get(), ModBlocks.BLACK_OPAL_ORE.get(),
             ModBlocks.BLACK_OPAL_DEEPSLATE_ORE.get(), ModBlocks.BLACK_OPAL_END_ORE.get(),
             ModBlocks.BLACK_OPAL_NETHER_ORE.get());
+    private static ItemLike BLACK_OPAL = ModItems.BLACK_OPAL.get();
     public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries)
     {
         super(output, registries);
@@ -61,7 +62,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('c', Items.STICK)
                 .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get()))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_PAXEL.get()).pattern("xxx").pattern(" s ").pattern(" s ").define("")
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BLACK_OPAL_PAXEL.get())
+                .pattern("xxx").pattern(" s ")
+                .pattern(" s ")
+                .define('x', BLACK_OPAL)
+                .define('s',Items.STICK);
 
         // Shapeless Recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
