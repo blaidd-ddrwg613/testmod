@@ -1,6 +1,7 @@
 package net.blaidd_Ddrwg613.testmod.data;
 
 import net.blaidd_Ddrwg613.testmod.TestMod;
+import net.blaidd_Ddrwg613.testmod.blocks.ModBlocks;
 import net.blaidd_Ddrwg613.testmod.items.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;

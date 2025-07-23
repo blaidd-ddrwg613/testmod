@@ -8,6 +8,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.TransparentBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -34,9 +35,8 @@ public class ModBlocks
             new DropExperienceBlock(UniformInt.of(5,8),BlockBehaviour.Properties.of().strength(4.0f).requiresCorrectToolForDrops()));
     public static final Supplier<Block> MAGIC_BLOCK = registerBlockWithTab("magic_block", ()->
             new MagicBlock(BlockBehaviour.Properties.of().strength(1.0f)));
-
     public static final Supplier<Block> TEST_BLOCK = registerBlockWithTab("test_block", ()->
-            new Block(BlockBehaviour.Properties.of().strength(1.0f)));
+            new Block(BlockBehaviour.Properties.of().strength(1.0f).noOcclusion()));
 
 
     private static <T extends Block> Supplier<Block> registerBlockWithTab(String name, Supplier<T> block)

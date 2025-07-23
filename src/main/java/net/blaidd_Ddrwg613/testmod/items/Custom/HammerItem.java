@@ -17,8 +17,7 @@ import java.util.List;
 
 public class HammerItem extends DiggerItem
 {
-    public HammerItem(Tier tier, Properties properties)
-    {
+    public HammerItem(Tier tier, Properties properties) {
         super(tier, BlockTags.MINEABLE_WITH_PICKAXE, properties);
     }
 
