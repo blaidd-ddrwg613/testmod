@@ -4,6 +4,7 @@ import com.google.common.collect.Sets;
 import net.blaidd_Ddrwg613.testmod.TestMod;
 import net.blaidd_Ddrwg613.testmod.items.Custom.ChainsawItem;
 import net.blaidd_Ddrwg613.testmod.items.Custom.HammerItem;
+import net.blaidd_Ddrwg613.testmod.items.Custom.MobImprisonmentStickItem;
 import net.blaidd_Ddrwg613.testmod.items.Custom.PaxelItem;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.world.item.*;
@@ -48,6 +49,9 @@ public class ModItems
     public static final Supplier<Item> BLACK_OPAL_HAMMER = registerWithTab("black_opal_hammer", ()->
             new HammerItem(BLACK_OPAL_TIER, new Item.Properties()
                     .attributes(HammerItem.createAttributes(BLACK_OPAL_TIER,8.0f, -4.5f))));
+    public static final Supplier<Item> MOB_CAPTURE_STICK = registerWithTab("mob_capture_stick", ()->
+            new MobImprisonmentStickItem(new Item.Properties()));
+
     private static Supplier<Item> registerWithTab(String name, Supplier<Item> supplier)
     {
         Supplier<Item> item = ITEMS.register(name, supplier);

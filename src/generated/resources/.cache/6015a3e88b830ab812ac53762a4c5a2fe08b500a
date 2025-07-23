@@ -1,4 +1,4 @@
-// 1.21	2025-07-16T21:40:35.8419653	Item Models: testmod
+// 1.21	2025-07-22T19:28:53.9304251	Item Models: testmod
 01ea1273c1ec94ff0e1d88222bde3056228d07d2 assets/testmod/models/item/black_opal.json
 c4cfe5669a98f78a4e561bd33dd760c57e0f970f assets/testmod/models/item/black_opal_axe.json
 4e2d8e1ce8b392938d6184eb3f720bbf8b7151a6 assets/testmod/models/item/black_opal_hammer.json
@@ -8,5 +8,6 @@ e93feecde95aab45323ba7084843f203f38d25c0 assets/testmod/models/item/black_opal_p
 9e2d3521f53a3a4e1eb36382c1403323e00d6cef assets/testmod/models/item/black_opal_shovel.json
 313d2838b3f766bc0f6f036f965e2e92a3c74613 assets/testmod/models/item/black_opal_sword.json
 ab338556827a861d00bc942179d86e886b8788ba assets/testmod/models/item/chainsaw.json
+557d8f49ea347ac5488f5a87c3c46b62ee46fcf0 assets/testmod/models/item/mob_capture_stick.json
 429ee3eb285aa3512d162cd99a30a05aa0e41cff assets/testmod/models/item/raw_black_opal.json
 90d67030c8ec710b988b919bfa71c3e9c5fc9e6b assets/testmod/models/item/tomato.json

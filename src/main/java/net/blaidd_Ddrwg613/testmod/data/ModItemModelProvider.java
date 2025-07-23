@@ -49,6 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider
         basicItem(ModItems.RAW_BLACK_OPAL.get());
         basicItem(ModItems.CHAINSAW.get());
         basicItem(ModItems.TOMATO.get());
+        basicItem(ModItems.MOB_CAPTURE_STICK.get());
 
         handheldItem((DeferredItem<Item>) ModItems.BLACK_OPAL_HOE);
         handheldItem((DeferredItem<Item>) ModItems.BLACK_OPAL_AXE);
