@@ -33,6 +33,7 @@ public class ModBlockLootTableGen extends BlockLootSubProvider
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
         dropSelf(ModBlocks.BLACK_OPAL_BLOCK.get());
         dropSelf(ModBlocks.RAW_BLACK_OPAL_BLOCK.get());
+        dropSelf(ModBlocks.TEST_BLOCK.get());
 
         this.add(ModBlocks.BLACK_OPAL_ORE.get(), block -> createOreDrop(block, ModItems.RAW_BLACK_OPAL.get()));
         this.add(ModBlocks.BLACK_OPAL_DEEPSLATE_ORE.get(),

@@ -3,6 +3,8 @@ package net.blaidd_Ddrwg613.testmod;
 import net.blaidd_Ddrwg613.testmod.blocks.ModBlocks;
 import net.blaidd_Ddrwg613.testmod.utils.ModCreativeModeTabs;
 import net.blaidd_Ddrwg613.testmod.items.ModItems;
+import net.minecraft.client.color.block.BlockColors;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -92,6 +94,16 @@ public class TestMod
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+        }
+
+        @SubscribeEvent
+        public static void registerColoredBlocks(RegisterColorHandlersEvent.Block event) {
+        }
+
+        @SubscribeEvent
+        public static void registerColoredItems(RegisterColorHandlersEvent.Item event) {
+
         }
     }
 }

@@ -1,4 +1,4 @@
-// 1.21	2025-07-16T21:40:35.8409655	Block States: testmod
+// 1.21	2025-07-22T22:49:33.5820973	Block States: testmod
 1e7d50b358018eaaa3ba47d761d6a79c0a1859c6 assets/testmod/blockstates/black_opal_block.json
 1dd59b869d771c09e17c434cfe87529a4dfb87a9 assets/testmod/blockstates/black_opal_deepslate_ore.json
 2657b22c07343e36f3d43b68ac652ec76f7e4f89 assets/testmod/blockstates/black_opal_end_ore.json
@@ -6,6 +6,7 @@
 82596224a187aa3cc6dc1a0ccdb77620bb912f22 assets/testmod/blockstates/black_opal_ore.json
 e74be35792306d17fb5b318ddd98e0a1affe5e47 assets/testmod/blockstates/magic_block.json
 156236a17e9e1c5b6250baa8ac2f47d929df43ad assets/testmod/blockstates/raw_black_opal_block.json
+caa818a2af90465fcacce857d75101ea4f624e8a assets/testmod/blockstates/test_block.json
 410903870a23fe1882e9063114ee61508528a396 assets/testmod/models/block/black_opal_block.json
 d28f1fabdcfda443b045a024d41d581391cbdf1f assets/testmod/models/block/black_opal_deepslate_ore.json
 61b4e731c5d050a959a082320eb1dacb330dd444 assets/testmod/models/block/black_opal_end_ore.json
@@ -13,6 +14,7 @@ e9549f01ffae78bbacd1c8ed860ba7374b66cf02 assets/testmod/models/block/black_opal_
 18a8dbc239037e61b94281aaa62d289cc3ed858e assets/testmod/models/block/black_opal_ore.json
 9a06e54e22cd98054d399605ca2038951a99fa94 assets/testmod/models/block/magic_block.json
 137f2b37393979fd2fbf7de64e7c2fadf0b549f0 assets/testmod/models/block/raw_black_opal_block.json
+cbf4ede4794e9a0ea8fcf7f7db56845956774705 assets/testmod/models/block/test_block.json
 91a090e1c05e5d861134b9ef4c3b2ce32ae1d4b0 assets/testmod/models/item/black_opal_block.json
 2b954da66b417657795eb05669bc7515a7741623 assets/testmod/models/item/black_opal_deepslate_ore.json
 1a34ea897f112aa6b6b5a427cd97e45d04fb1db8 assets/testmod/models/item/black_opal_end_ore.json
@@ -20,3 +22,4 @@ e9549f01ffae78bbacd1c8ed860ba7374b66cf02 assets/testmod/models/block/black_opal_
 7927340227921985f786a0f281b3ceea07a21a08 assets/testmod/models/item/black_opal_ore.json
 c208ec43fa86882c5cf0cfffbc412e1c66dc6eba assets/testmod/models/item/magic_block.json
 cbc66f99767794650b5aa3f576b8b6c1f8938a34 assets/testmod/models/item/raw_black_opal_block.json
+0e4b886ba06242fa9d4c64a8eda27de529bb9c86 assets/testmod/models/item/test_block.json
