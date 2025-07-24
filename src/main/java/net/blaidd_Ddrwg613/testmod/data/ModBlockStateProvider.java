@@ -29,6 +29,7 @@ public class ModBlockStateProvider extends BlockStateProvider
         blockWithItem(ModBlocks.BLACK_OPAL_DEEPSLATE_ORE);
         blockWithItem(ModBlocks.BLACK_OPAL_NETHER_ORE);
         blockWithItem(ModBlocks.BLACK_OPAL_END_ORE);
+
         cutoutBlockWithItem(ModBlocks.TEST_BLOCK);
 
     }

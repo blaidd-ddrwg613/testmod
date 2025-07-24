@@ -3,10 +3,8 @@ package net.blaidd_Ddrwg613.testmod.blocks.custom;
 import com.mojang.serialization.MapCodec;
 import net.blaidd_Ddrwg613.testmod.entities.custom.PedestalBlockEntity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.Container;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -33,7 +31,7 @@ public class PedestalBlock extends BaseEntityBlock {
 
     @Override
     protected MapCodec<? extends BaseEntityBlock> codec() {
-        return null;
+        return CODEC;
     }
 
     @Override
