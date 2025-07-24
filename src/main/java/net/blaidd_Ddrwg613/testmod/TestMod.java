@@ -1,9 +1,13 @@
 package net.blaidd_Ddrwg613.testmod;
 
 import net.blaidd_Ddrwg613.testmod.blocks.ModBlocks;
+import net.blaidd_Ddrwg613.testmod.blocks.custom.renderer.PedestalBlockEntityRenderer;
+import net.blaidd_Ddrwg613.testmod.entities.ModBlockEntities;
 import net.blaidd_Ddrwg613.testmod.utils.ModCreativeModeTabs;
 import net.blaidd_Ddrwg613.testmod.items.ModItems;
 import net.minecraft.client.color.block.BlockColors;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import org.slf4j.Logger;
 
@@ -43,6 +47,7 @@ public class TestMod
 
         ModItems.Register(modEventBus);
         ModBlocks.Register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         ModCreativeModeTabs.Register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
@@ -95,6 +100,11 @@ public class TestMod
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
+        }
+
+        @SubscribeEvent
+        public static void registerBERenderer(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.PEDESTAL_BE.get(), PedestalBlockEntityRenderer::new);
         }
 
         @SubscribeEvent

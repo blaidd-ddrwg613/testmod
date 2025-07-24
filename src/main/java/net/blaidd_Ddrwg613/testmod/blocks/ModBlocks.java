@@ -2,13 +2,14 @@ package net.blaidd_Ddrwg613.testmod.blocks;
 
 import com.google.common.collect.Sets;
 import net.blaidd_Ddrwg613.testmod.TestMod;
+import net.blaidd_Ddrwg613.testmod.blocks.custom.MagicBlock;
+import net.blaidd_Ddrwg613.testmod.blocks.custom.PedestalBlock;
 import net.blaidd_Ddrwg613.testmod.items.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.TransparentBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -37,7 +38,8 @@ public class ModBlocks
             new MagicBlock(BlockBehaviour.Properties.of().strength(1.0f)));
     public static final Supplier<Block> TEST_BLOCK = registerBlockWithTab("test_block", ()->
             new Block(BlockBehaviour.Properties.of().strength(1.0f).noOcclusion()));
-
+    public static final Supplier<Block> PEDESTAL = registerBlockWithTab("pedestal",()->
+            new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     private static <T extends Block> Supplier<Block> registerBlockWithTab(String name, Supplier<T> block)
     {

@@ -7,6 +7,7 @@
     "testmod:black_opal_nether_ore",
     "testmod:black_opal_end_ore",
     "testmod:magic_block",
-    "testmod:test_block"
+    "testmod:test_block",
+    "testmod:pedestal"
   ]
 }

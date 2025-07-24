@@ -19,7 +19,7 @@
   "block.testmod.black_opal_nether_ore" : "Black Opal Nether Ore",
   "block.testmod.black_opal_end_ore" : "Black Opal End Ore",
   "block.testmod.magic_block": "Magic Block",
-
+  "block.testmod._block": "Pedestal",
 
   "itemGroup.testmod.black_opal_items_tab" : "Test Mod",
   "gui.entity_tooltip_empty" : "Right Click a Mob to Capture",

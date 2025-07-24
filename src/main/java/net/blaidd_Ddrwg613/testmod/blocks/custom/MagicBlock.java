@@ -1,4 +1,4 @@
-package net.blaidd_Ddrwg613.testmod.blocks;
+package net.blaidd_Ddrwg613.testmod.blocks.custom;
 
 import net.blaidd_Ddrwg613.testmod.items.ModItems;
 import net.blaidd_Ddrwg613.testmod.utils.ModTags;
